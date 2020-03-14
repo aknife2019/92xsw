@@ -1,0 +1,7 @@
+rewrite '^/index\.html' /index.php last;
+rewrite '^/top\/(\w+)\/(\d+)\.html' /top.php?url=/top$1/$2.html last;
+rewrite '^/cat\/wanben\/(\d+).html' /category.php?url=/wanben/$1 last;
+rewrite '^/cat\/(.*)' /category.php?url=/$1 last;
+rewrite '^/book\/(\d+).html' /book.php?url=/book/$1 last;
+rewrite '^/show\/(\d+)\/([\d_]+)\.html' /show.php?url=/book/$1/$2.html last;
+rewrite '^/search\/(.*).html' /search.php?keyword=$1&url=%2Fmodules%2Farticle%2Fsearch.php%3Fsearchkey%3D$1 last;
