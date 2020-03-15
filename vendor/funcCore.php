@@ -78,6 +78,10 @@ function regexMatch($rule,$cacheName=''){
     if( $rule['exclude'] ){
         $exclude = explode("|",$rule['exclude']);
         foreach( $exclude as $val ){
+            // 正取还是倒取
+            if( $val < 0 ){
+                $val = count($result)+$val;
+            }
             unset($result[$val]);
         }
     }
@@ -128,7 +132,6 @@ function baseUrl($url,$type,$replace=0,$string=""){
             $url = str_replace($key,$val,$url);
         }
     }
-
     return $config['website'].ltrim($url,'/');
 }
 

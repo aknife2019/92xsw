@@ -18,7 +18,7 @@
                 <div class="row">
                     <h5 class="pull-left col-xs-4"><i class="fa fa-diamond fa-fw"></i>本站推荐</h5>
                     <div class="col-md-6 col-xs-8 pull-right">
-                        <form action="/search.php" target="_blank">
+                        <form action="{$config.website}search.php" target="_blank">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="请输入您需要搜索的关键字" id="bdcsMain" name="keyword">
                                 <span class="input-group-btn">

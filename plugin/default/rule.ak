@@ -15,6 +15,7 @@
         "regex":{
             "top":["\\/top(\\w+)\\/(\\d+)\\.html","/top/$1/$2.html"],
             "cat":["\\/(fenlei\\d+|wanben)\\/(\\d+)","/cat/$1/$2","1,2"],
+            "cat":["\\/cat\\/cat","/cat"],
             "book":["\\/book\\/(\\d+)\\/","/book/$1.html"],
             "show":["\\/book\\/(\\d+)\\/([\\d_]+)\\.html","/show/$1/$2.html"]
         },
@@ -22,7 +23,7 @@
             "新谷粒网 www.xinguli.cc，":"就爱小说网 92xsw.cn",
             "（":"",
             "）":"",
-            "https://www.biqukan.net/":"/"
+            "http://www.xinguli.cc/":"/"
         },
         "url":{
            "fenlei1":"xuanhuan",
@@ -225,6 +226,7 @@
             "newchapter":{
                 "cache":"60",
                 "range":".panel-body:eq(1) dd",
+                "exclude":"-1",
                 "regex":{
                     "show":"a",
                     "show_url":"a@href"

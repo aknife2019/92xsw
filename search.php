@@ -9,7 +9,7 @@ include 'config.php';
 
 // 判断当前url
 if( strpos($_SERVER['REQUEST_URI'],'search.php') !== false ){
-    $url = "/search/".$_GET['keyword'].".html";
+    $url = $config['website']."search/".$_GET['keyword'].".html";
     header("Location:$url");
 }
 
