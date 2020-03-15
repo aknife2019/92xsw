@@ -14,7 +14,7 @@
 /* 正文 */
 {block name="body"}
 <ol class="breadcrumb hidden-xs">
-    <li><a href="/"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="{$config.website}"><i class="fa fa-home fa-fw"></i>首页</a></li>
     <li><a href="{:baseUrl($content.catgory_url,'cat',1)}" target="_blank" title="{$content.catgory}">{$content.catgory}</a></li>
     <li><a href="{:baseUrl($content.book_url,'book')}">{$content.book}</a></li>
     <li class="active">{$content.title}</li>
