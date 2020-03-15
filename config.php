@@ -8,7 +8,7 @@
 
 // 配置文件
 $config = [
-    "website"       =>  "http://92xsw.local",
+    "website"       =>  "https://134.175.63.241/92xsw/",
     "title"         =>  "就爱小说网",
     "keywords"      =>  "就爱小说网,没有广告的小说网,无广告小说网",
     "email"         =>  "admin#92xsw.com",

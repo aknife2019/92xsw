@@ -90,6 +90,12 @@ function regexMatch($rule,$cacheName=''){
         $result = array_slice($result,0,$rule['limit']);
     }
     $result = array_values($result);
+    
+    // 判断是否有字符串拼接
+    if( isset($rule['link']) ){
+        $link = explode('@',$rule['link']);
+        $result[0][$link[0]] = $result[0][$link[1]].str_replace($result[0][$link[1]],'',$result[0][$link[0]]);
+    }
 
     // 写入缓存
     if( $rule['cache'] && !empty($cacheName) ){
@@ -106,6 +112,7 @@ function regexMatch($rule,$cacheName=''){
 // string 是否要拼接字符串
 function baseUrl($url,$type,$replace=0,$string=""){
     global $plugin;
+    global $config;
     $url = $string.str_replace($plugin['url'],'',$url);
     $preg= $plugin['replace']['regex'][$type];
 
@@ -122,7 +129,7 @@ function baseUrl($url,$type,$replace=0,$string=""){
         }
     }
 
-    return $url;
+    return $config['website'].ltrim($url,'/');
 }
 
 // 解密url，对应源站数据

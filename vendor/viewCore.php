@@ -49,6 +49,7 @@ class viewCore
 
         self::$tp->fetch($path);
         self::$tp->display( $content );
+
         exit;
     }
 }

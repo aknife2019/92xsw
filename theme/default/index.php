@@ -136,7 +136,7 @@
     </div>
 </div>
 <!-- 友情链接 -->
-<div class="panel panel-default hidden-xs">
+<div class="panel panel-default hidden-xs" style="margin-left: -15px;">
     <div class="panel-heading">
         <span class="text-muted"><i class="fa fa-link fa-fw"></i>友情链接</span>
     </div>

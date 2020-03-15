@@ -35,5 +35,4 @@ if( $newlist ){
     $newlistData = regexMatch($newlist,'cache/index_newlist');
     $View::assign("newlist",$newlistData);
 }
-
 $View::display();

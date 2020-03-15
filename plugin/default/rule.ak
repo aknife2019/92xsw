@@ -243,6 +243,7 @@
             "page":{
                 "cache":"60*24*30",
                 "range":".readPager",
+                "link":"next_url@chapter_url",
                 "regex":{
                     "prev":"#linkPrev",
                     "prev_url":"#linkPrev@href",

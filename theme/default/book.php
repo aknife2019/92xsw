@@ -14,7 +14,7 @@
 /* 正文 */
 {block name="body"}
 <ol class="breadcrumb hidden-xs">
-    <li><a href="/" title="千千小说网"><i class="fa fa-home fa-fw"></i>首页</a></li>
+    <li><a href="{$config.website}" title="千千小说网"><i class="fa fa-home fa-fw"></i>首页</a></li>
     <li class="active">{$info.category}</li>
     <li class="active">{$info.title}</li>
 </ol>

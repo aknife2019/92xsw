@@ -37,5 +37,4 @@ if( $page ){
     $pageData = regexMatch($page,"cache/show/".md5($_GET['url'])."_page");
     $View::assign("page",$pageData[0]);
 }
-
 $View::display();

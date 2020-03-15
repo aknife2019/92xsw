@@ -4,9 +4,9 @@ function changeBackoundColor(){
 }
 function changeFontColor(){
 	var color = $('#txtcolor').val();
-	$('#htmlContentMain').css('color',color);
+	$('#htmlContent').css('color',color);
 }
 function changeFontSize(){
 	var fontSize = $('#fonttype').val();
-	$('#htmlContentMain').css('font-size',fontSize);
+	$('#htmlContent').css('font-size',fontSize);
 }

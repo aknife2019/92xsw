@@ -13,7 +13,6 @@ define('__ROOT__',str_replace('\\','/',dirname(__DIR__)).'/');
 /* 设置路径常量 - 相对路径 */
 define("__WEB__",str_replace("\\","/",dirname($_SERVER["PHP_SELF"])) != "/" ? str_replace("\\","/",dirname($_SERVER["PHP_SELF"]))."/":str_replace("\\","/",dirname($_SERVER["PHP_SELF"])));
 define("__URL__",$_SERVER["REQUEST_SCHEME"].'://'.$_SERVER["HTTP_HOST"].__WEB__);
-
 if( DEBUG === true ) {
     ini_set("display_errors","On");
     error_reporting(E_ALL&~(E_WARNING | E_NOTICE));
